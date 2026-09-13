@@ -15,5 +15,4 @@ inline bool is_aligned(void* ptr, std::size_t alignment) {
 }
 
 // Asserts alignment in debug builds
-#define ASSERT_ALIGNED(ptr, alignment) \
-    assert(is_aligned(ptr, alignment) && "pointer is not aligned!")
+#define ASSERT_ALIGNED(ptr, alignment) assert(is_aligned(ptr, alignment) && "pointer is not aligned!")
